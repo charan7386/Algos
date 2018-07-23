@@ -1,0 +1,58 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+'.source.python':
+  'Input':
+    'prefix': 'inp'
+    'body': 'raw_input()'
+
+  'Array Input':
+    'prefix': 'map'
+    'body': '${1:A} = map(int, raw_input().split())'
+
+  'Array Append':
+    'prefix': 'app'
+    'body': 'append($1)'
+
+  'Function':
+    'prefix': 'fn'
+    'body': 'def ${1:function}(${2:args}):\n\n\t${3:return}'
+
+  'For Loop':
+    'prefix': 'for'
+    'body': 'for $1 in range($2):\n\t'
+
+  'if':
+    'prefix': 'if'
+    'body': 'if(${1:condition}):\n\t'
+
+  'if/else':
+    'prefix': 'ifel'
+    'body': 'if(${1:condition}):\n\t\nelse:\n\t'
+
+  'Try/Except':
+    'prefix': 'te'
+    'body': 'try:\n\t${1:pass}\nexcept ${2:Exception} as ${3:e}:\n\t${4:raise $3}'
+
+  'Import':
+    'prefix': 'imp'
+    'body': 'import $1'
