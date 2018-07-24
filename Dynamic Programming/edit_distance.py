@@ -11,7 +11,7 @@ def dp(s1, s2, m, n):
     L = [[0]*(n+1) for i in range(m+1)]
     for i in range(m+1):
         for j in range(n+1):
-            if(i == j):
+            if(i == 0):
                 L[i][j] = j
             elif(j == 0):
                 L[i][j] = i

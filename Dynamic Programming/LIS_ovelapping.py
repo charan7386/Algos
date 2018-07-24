@@ -4,7 +4,7 @@ import sys
 
 def LIS(A, i, n, prev):
     if(i==n):
-        return 0;
+        return 0
     exclude = LIS(A, i+1, n, prev)
     include = 0
     if(A[i]>prev):
