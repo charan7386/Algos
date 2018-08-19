@@ -21,17 +21,6 @@
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 
 '.source.python':
-  'Start_Code':
-    'prefix': 'code'
-    'body': 'def fn(args):\n\nA=map(int, raw_input.split())'
-
-  'DP Recursion code':
-    'prefix': 'dp'
-    'body': 'def fn(args, cache):\n\n\tkey=( , )\n\tif key in cache:\n\t\tvalue=cache[key]\n\telse:\n\n\t\n\treturn value\n\nA = map(int, raw_input().split())\n\nfn(args, {})'
-
-  'Recursion Start Code':
-    'prefix': 'rec_code'
-    'body': 'import functools\nimport sys\ndef memoize(f):\n\tcache = {}\n\t@functools.wraps(f)\n\tdef newfunc(*args):\n\t\targs = tuple(args)\n\t\tif args not in cache:\n\t\t\tcache[args] = f(*args)\n\t\treturn cache[args]\n\treturn newfunc\n\n@memoize\ndef fn(args):\n\nA=map(int, raw_input.split())'
 
   'Input':
     'prefix': 'inp'
