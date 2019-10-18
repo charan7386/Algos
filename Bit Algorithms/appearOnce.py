@@ -10,4 +10,4 @@ def ans(A, n):
     return ones
 
 A = map(int, raw_input().split())
-print ans(A, len(A))
+print(ans(A, len(A)))
