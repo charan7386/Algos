@@ -6,5 +6,6 @@ def fn(A, n):
             A[i], A[j] = A[j], A[i]
     return A
 
+#Enter your inputs here
 A = list(map(int, input().split(', ')))
 print(fn(A, len(A)))
