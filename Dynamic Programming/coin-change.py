@@ -19,6 +19,7 @@ def countDP(A, m, n, dp):
     dp[m][n] = countDP(A, m-1, n, dp) + countDP(A, m, n-A[m], dp)
     return dp[m][n]
 
+#Enter the array here
 A = map(int, raw_input().split())
 value = int(raw_input())
 print count(A, len(A), value)
