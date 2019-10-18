@@ -1,3 +1,4 @@
+#Knight Tour Problem
 def isSafe(next_x, next_y, sol, N):
     if(next_x >= 0 and next_x <N and next_y >= 0 and next_y < N and sol[next_x][next_y] == -1):
         return True
