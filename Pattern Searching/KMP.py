@@ -1,3 +1,4 @@
+#LPS array defination
 def LPS_array(pat, M, lps):
     len = 0
     i = 1
